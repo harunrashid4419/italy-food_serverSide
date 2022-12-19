@@ -11,12 +11,24 @@ app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.uqseuad.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
 
+async function run(){
+  try{
+    const categoriesCollections = client.db('italy-food').collection('categories');
+
+    app.get('/categories', async(req, res) =>{
+      const query = {};
+      const categories = await categoriesCollections.find(query).toArray();
+      res.send(categories);
+    })
+
+
+  }
+  finally{
+
+  }
+}
+run().catch(error => console.log(error));
 
 
 app.get('/', async(req, res) =>{
