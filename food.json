@@ -1,0 +1,105 @@
+[
+    {
+        "name": "Alsatian",
+        "img": "https://i.ibb.co/6BMdsW4/Products-4-600x600.jpg",
+        "price": "102",
+        "description": "The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece comfort all year around. Feel better in this sweatshirt because Hanes keeps plastic bottles of landfills by using recycled polyester.7.8 ounce fleece sweatshirt made with up to 5 percent polyester created from recycled plastic.",
+        "category": "Pizza",
+        "img1": "https://i.ibb.co/9NYRhHc/Products-9-600x600.jpg"
+    },
+    {
+        "name": "American Burgers",
+        "img": "https://i.ibb.co/PDGMXgL/Products-1-600x600.jpg",
+        "price": "78",
+        "description": "Dressed with leaf lettuce and tomatoes on a toasted croissant.",
+        "category": "BURGERS",
+        "img1": "https://i.ibb.co/fDSVtG1/Products-25-600x600.jpg"
+    },
+    {
+        "name": "Banana Leaf",
+        "img": "https://i.ibb.co/Mn2YWYx/Products-6-600x600.jpg",
+        "price": "100",
+        "description": "Dressed with leaf lettuce and tomatoes on a toasted croissant.",
+        "category": "COMBO OFFER",
+        "img1": "https://i.ibb.co/fMjXSkB/1-600x600.jpg"
+    },
+    {
+        "name": "BBQ Fries",
+        "img": "https://i.ibb.co/YXBsjZN/Products-6-600x600.jpg",
+        "price": "221",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "category": "COMBO OFFER, KIDS MENU",
+        "img1": "https://i.ibb.co/7Y9NBBc/Products-23-600x600.jpg"
+    },
+    {
+        "name": "Bonchon Chicken",
+        "img": "https://i.ibb.co/Bn3d94w/Products-8-600x600.jpg",
+        "price": "210",
+        "description": "The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece comfort all year around. Feel better in this sweatshirt because Hanes keeps plastic bottles of landfills by using recycled polyester.7.8 ounce fleece sweatshirt made with up to 5 percent polyester created from recycled plastic.",
+        "category": "SODA WATER",
+        "img1": "https://i.ibb.co/6tqsdXK/Products-17-600x600.jpg"
+    },
+    {
+        "name": "Cheesecake",
+        "img": "https://i.ibb.co/8BzQZPC/Products-16-600x600.jpg",
+        "price": "400",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "category": "BURGERS, BUTTER MIX",
+        "img1": "https://i.ibb.co/TrrQYQ7/Products-19-600x600.jpg"
+    },
+    {
+        "name": "Combo Salad",
+        "img": "https://i.ibb.co/Mn2YWYx/Products-6-600x600.jpg",
+        "price": "44",
+        "description": "The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece comfort all year around. Feel better in this sweatshirt because Hanes keeps plastic bottles of landfills by using recycled polyester.7.8 ounce fleece sweatshirt made with up to 5 percent polyester created from recycled plastic.",
+        "category": "SODA WATER",
+        "img1": "https://i.ibb.co/jkx1JFz/Products-20-600x600.jpg"
+    },
+    {
+        "name": "French Fries",
+        "img": "https://i.ibb.co/Q9bmjY7/Products-5-600x600.jpg",
+        "price": "33",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "category": "COMBO OFFER, SODA WATER",
+        "img1": "https://i.ibb.co/YXBsjZN/Products-6-600x600.jpg"
+    },
+    {
+        "name": "Mare E Monti",
+        "img": "https://i.ibb.co/3rPHk2j/Products-3-600x600.jpg",
+        "price": "340",
+        "description": "Dressed with leaf lettuce and tomatoes on a toasted croissant.",
+        "category": "FASCINATING TASTE, SODA WATER",
+        "img1": "https://i.ibb.co/6BMdsW4/Products-4-600x600.jpg"
+    },
+    {
+        "name": "Margarita",
+        "img": "https://i.ibb.co/pLCVMTc/Products-11-600x600.jpg",
+        "price": "45",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "category": "KIDS MENU, SANDWICH",
+        "img1": "https://i.ibb.co/r320S4X/Products-3-600x600.jpg"
+    },
+    {
+        "name": "Pink Sugar",
+        "img": "https://i.ibb.co/HKzVG4H/Products-26-600x600.jpg",
+        "price": "65",
+        "description": "The EcoSmart Fleece Hoodie full-zip hooded jacket provides medium weight fleece comfort all year around. Feel better in this sweatshirt because Hanes keeps plastic bottles of landfills by using recycled polyester.7.8 ounce fleece sweatshirt made with up to 5 percent polyester created from recycled plastic.",
+        "category": "BUTTER MIX",
+        "img1": "https://i.ibb.co/S0rHw3r/Products-21-600x600.jpg"
+    },
+    {
+        "name": "Zorba Salad",
+        "img": "https://i.ibb.co/QfCQjry/Products-24-600x600.jpg",
+        "price": "54",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "category": "BURGERS, BUTTER MIX, SANDWICH",
+        "img1": "https://i.ibb.co/M7tqc1Y/Products-10-600x600.jpg"
+    },
+    {
+        "name": "Awesome Linen Car",
+        "img": "https://i.ibb.co/tLwdHyH/o2-800x800.jpg",
+        "price": "12",
+        "description": "Qui nemo rem odio numquam et aut quod ut. Officia ratione dolorum voluptatem aut ad aspernatur quo. Est ipsum veritatis cupiditate eos est enim asperiores.",
+        "img1": "https://i.ibb.co/sVyKVDY/Products-24-600x600.jpg"
+    }
+]

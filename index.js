@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 require('dotenv').config();
 const port = process.env.PORT || 5000;
 
@@ -15,12 +15,52 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run(){
   try{
     const categoriesCollections = client.db('italy-food').collection('categories');
+    const menuCardCollections = client.db('italy-food').collection('menuCard');
+    const blogCollections = client.db('italy-food').collection('blog');
+    const foodsCollections = client.db('italy-food').collection('foods');
 
     app.get('/categories', async(req, res) =>{
       const query = {};
       const categories = await categoriesCollections.find(query).toArray();
       res.send(categories);
+    });
+
+    // get blog
+    app.get('/blog', async(req, res) =>{
+      const blog = {};
+      const result = await blogCollections.find(blog).toArray();
+      res.send(result);
+    });
+
+    // get single blog
+    app.get('/blogDetails/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)};
+      const result = await blogCollections.findOne(query);
+      res.send(result);
+    });
+
+    // get 4 foods
+    app.get('/foods', async(req, res) =>{
+      const food = {};
+      const result = (await foodsCollections.find(food).toArray()).slice(0, 4);
+      res.send(result);
+    });
+
+    // all foods
+    app.get('/allFoods', async(req, res) =>{
+      const foods = {};
+      const result = await foodsCollections.find(foods).toArray();
+      res.send(result);
     })
+
+    // get single food by id
+    app.get('/foodDetails/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)};
+      const result = await foodsCollections.findOne(query);
+      res.send(result);
+    });
 
 
   }
