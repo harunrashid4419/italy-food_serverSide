@@ -18,6 +18,7 @@ async function run(){
     const menuCardCollections = client.db('italy-food').collection('menuCard');
     const blogCollections = client.db('italy-food').collection('blog');
     const foodsCollections = client.db('italy-food').collection('foods');
+    const reviewCollections = client.db('italy-food').collection('reviews');
 
     app.get('/categories', async(req, res) =>{
       const query = {};
@@ -61,6 +62,21 @@ async function run(){
       const result = await foodsCollections.findOne(query);
       res.send(result);
     });
+
+    // add review
+    app.post('/review', async(req, res) =>{
+      const review = req.body;
+      const result = await reviewCollections.insertOne(review);
+      res.send(result);
+    });
+
+    // get review and query by id
+    app.get('/review/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {id};
+      const result = await reviewCollections.find(query).toArray();
+      res.send(result);
+    })
 
 
   }
