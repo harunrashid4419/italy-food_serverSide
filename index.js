@@ -20,12 +20,14 @@ async function run() {
     const categoriesCollections = client
       .db("italy-food")
       .collection("categories");
-    const menuCardCollections = client.db("italy-food").collection("menuCard");
     const blogCollections = client.db("italy-food").collection("blog");
     const foodsCollections = client.db("italy-food").collection("foods");
     const reviewCollections = client.db("italy-food").collection("reviews");
     const usersCollections = client.db("italy-food").collection("users");
     const orderCollections = client.db("italy-food").collection("order");
+    const overallReviewCollections = client
+      .db("italy-food")
+      .collection("overallReview");
 
     app.get("/categories", async (req, res) => {
       const query = {};
@@ -52,6 +54,13 @@ async function run() {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
       const result = await blogCollections.findOne(query);
+      res.send(result);
+    });
+
+    // post foods
+    app.post("/foods", async (req, res) => {
+      const foods = req.body;
+      const result = await foodsCollections.insertOne(foods);
       res.send(result);
     });
 
@@ -129,6 +138,29 @@ async function run() {
       const email = req.query.email;
       const query = { email: email };
       const result = await orderCollections.find(query).toArray();
+      res.send(result);
+    });
+
+    // admin route
+    app.get("/user/admin/:email", async (req, res) => {
+      const email = req.params.email;
+      const query = { email: email };
+      const filter = await usersCollections.findOne(query);
+      res.send({ isAdmin: filter.role === "admin" });
+    });
+
+    // add review
+    app.post("/userReview", async (req, res) => {
+      const overallReview = req.body;
+      console.log(overallReview);
+      const result = await overallReviewCollections.insertOne(overallReview);
+      res.send(result);
+    });
+
+    // get review
+    app.get("/userReview", async (req, res) => {
+      const userReview = {};
+      const result = await overallReviewCollections.find(userReview).toArray();
       res.send(result);
     });
   } finally {
